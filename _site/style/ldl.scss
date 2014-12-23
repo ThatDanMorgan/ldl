@@ -1,0 +1,80 @@
+@import "table.scss";
+@import "keyvalue.scss";
+@import "app/views/TableRowExpanded.scss";
+
+body{
+    font-family:sans-serif;
+}
+*{
+    box-sizing:border-box;
+}
+
+/**
+ * Clearfix from http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body{
+    background-color:#9ba197;
+    margin:0; 
+    padding:0;
+}
+
+.ldl_loading{
+    font-size:1.5em;
+    font-weight:bold;
+    max-width:100px;    
+    padding:40px;
+    margin:20px auto;
+    text-align:center;       
+}
+
+.ldl_site_header{
+    max-width:980px;
+    margin:0 auto;
+    background-color:#efefed;
+    padding:20px;
+}
+.ldl_page_header{
+    background-color:#FFF;
+    max-width:980px;
+    margin:0 auto;        
+    padding:10px;
+    h1{
+        width:40%;
+        margin:0;
+        padding:0;
+        float:left;
+    }
+    .search{
+        padding:5px 0;
+        width:60%;
+        float:left;
+        text-align:right;
+    }
+}
+.ldl_main_container{
+    background-color:#FFF;
+    max-width:980px;
+    margin:0 auto;
+    padding:10px;
+
+}
+
+
+
