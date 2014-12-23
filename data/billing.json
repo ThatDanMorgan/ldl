@@ -1,0 +1,65 @@
+[
+    {
+        "city_name": "CHICAGO",
+        "country_code": "USA",
+        "postal_code": "60654",
+        "address1": "750 N. Orleans Street",
+        "address2": "STE 100",
+        "name": "BLOCKED",
+        "state_code": "IL",
+        "id": "4smstoop"
+    },
+    {
+        "city_name": "CHICAGO",
+        "country_code": "USA",
+        "postal_code": "60610",
+        "address1": "600 W. Chicago Ave",
+        "name": "BLOCKED",
+        "state_code": "IL",
+        "id": "2dnnrrbu"
+    },
+    {
+        "city_name": "CHICAGO",
+        "country_code": "USA",
+        "postal_code": "60654",
+        "address1": "750 N. Orleans",
+        "address2": "Suite 100",
+        "name": "BLOCKED",
+        "state_code": "IL",
+        "fax": "BLOCKED",
+        "id": "bsx8w6xu"
+    },
+    {
+        "city_name": "CHICAGO",
+        "country_code": "USA",
+        "postal_code": "60654",
+        "address1": "750 N. Orleans",
+        "address2": "Suite 100",
+        "name": "BLOCKED",
+        "state_code": "IL",
+        "id": "3g0lja4e"
+    },
+    {
+        "city_name": "CHICAGO",
+        "country_code": "USA",
+        "postal_code": "60654",
+        "address1": "600 West Chicago Ave Suite 725",
+        "name": "BLOCKED",
+        "state_code": "IL",
+        "fax": "BLOCKED",
+        "id": "8g3emxqe"
+    },
+    {
+        "id": "8iynx380"
+    },
+    {
+        "city_name": "CHICAGO",
+        "country_code": "USA",
+        "postal_code": "60654",
+        "address1": "750 North Orleans",
+        "address2": "Suite 100",
+        "name": "BLOCKED",
+        "state_code": "IL",
+        "id": "33i23igs"
+    }
+]

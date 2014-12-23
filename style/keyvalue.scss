@@ -1,0 +1,18 @@
+.ldl_key_value{
+    .row{
+        margin:5px 0;
+        label{
+            float:left;
+            width:30%;
+            margin:0 1% 0 0;            
+            text-align:right;
+            color:#0b2b5a;
+        }
+        .ldl_value{
+            width:68%;
+            margin:0 0 0 1%; 
+            float:left;       
+        }
+    }
+
+}

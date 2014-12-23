@@ -1,0 +1,47 @@
+<div class="ldl_fromto_section">
+    <div class="cf">
+        <div class="ldl_from ldl_key_value">
+            {{#main}}
+            <div class="row date cf">{{pickup_date}}</div>
+            {{/main}}
+            {{#origin}}
+                {{> contact}}
+            {{/origin}}
+        </div>
+        <div class="cool_arrow"></div>
+        <div class="ldl_to ldl_key_value">
+            {{#main}}
+                <div class="row date cf">{{delivery_date}}</div>
+            {{/main}}
+            {{#destination}}
+                {{> contact}}
+            {{/destination}}
+        </div>
+    </div>    
+    <div class="ldl_further_data cf">
+        {{#main}}
+        <span>{{miles}} mile(s)</span>
+        {{#transit_days}}| <span>{{transit_days}} day(s)</span>{{/transit_days}}
+        {{#transit_time}}| <span>{{transit_time}} hour(s)</span>{{/transit_time}}
+        {{/main}}
+    </div>    
+</div>
+<div class="ldl_billing_section cf">
+    <div class="ldl_charges ldl_key_value">
+        {{#main}}
+        <h3>Pricing</h3>
+        <div class="row cf">            
+            <label>Fuel</label><div class="ldl_value">${{fuel_cost}}</div> 
+        </div>
+        <div class="row cf">            
+            <label>Freight</label><div class="ldl_value">${{freight_cost}}</div> 
+        </div>
+        {{/main}}          
+    </div>
+    <div class="ldl_billing_info ldl_key_value">
+        <h3>Billed To</h3>
+        {{#billing}}
+            {{> contact}}
+        {{/billing}}
+    </div>
+</div>
