@@ -1,0 +1,182 @@
+.ldl_table_row {
+  margin: 5px 0;
+  border: 1px solid #FFF; }
+  .ldl_table_row.ldl_table_header {
+    color: #0b2b5a;
+    font-weight: bold;
+    background-color: #FFF !important;
+    /* UGH! */ }
+  .ldl_table_row:nth-child(odd) {
+    background-color: #EEE; }
+  .ldl_table_row ul {
+    margin: 0;
+    padding: 0; }
+  .ldl_table_row li {
+    float: left;
+    display: block;
+    margin: 0; }
+  .ldl_table_row .expando button {
+    color: #CCC;
+    font-size: 25px;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0; }
+    .ldl_table_row .expando button:hover {
+      color: #444; }
+    .ldl_table_row .expando button:after {
+      content: "\25BC"; }
+  .ldl_table_row .expanded_content {
+    display: none;
+    padding: 10px 5%;
+    background: #FFF; }
+  .ldl_table_row.expanded {
+    border: 1px solid #CCC; }
+    .ldl_table_row.expanded .expanded_content {
+      display: block;
+      border-top: 1px solid #CCC; }
+    .ldl_table_row.expanded .expando button:after {
+      content: "\25b2"; }
+  .ldl_table_row .clarification {
+    color: #999;
+    font-size: 0.9em;
+    padding: 2px; }
+
+/**
+ * Styles Specific to the LDL Shipment Table
+ */
+.ldl_shipment_row ul {
+  padding: 2px 1%; }
+.ldl_shipment_row .load_number {
+  width: 15%; }
+.ldl_shipment_row .status {
+  width: 20%; }
+.ldl_shipment_row .origin {
+  width: 30%; }
+.ldl_shipment_row .destination {
+  width: 30%; }
+.ldl_shipment_row .expando {
+  width: 5%; }
+
+.ldl_key_value .row {
+  margin: 5px 0; }
+  .ldl_key_value .row label {
+    float: left;
+    width: 30%;
+    margin: 0 1% 0 0;
+    text-align: right;
+    color: #0b2b5a; }
+  .ldl_key_value .row .ldl_value {
+    width: 68%;
+    margin: 0 0 0 1%;
+    float: left; }
+
+.ldl_table_expanded_row .ldl_fromto_section .ldl_key_value {
+  padding: 10px 2%;
+  width: 43%;
+  margin: 0 1%;
+  float: left;
+  border: 1px solid #0b2b5a; }
+.ldl_table_expanded_row .ldl_fromto_section .cool_arrow {
+  width: 10%;
+  text-align: center;
+  float: left;
+  color: #c72629;
+  font-weight: bold;
+  font-size: 75px;
+  padding: 20px 0 0 40px; }
+  .ldl_table_expanded_row .ldl_fromto_section .cool_arrow:after {
+    content: "\3009"; }
+.ldl_table_expanded_row .ldl_fromto_section .ldl_further_data {
+  margin: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #999; }
+.ldl_table_expanded_row .ldl_fromto_section .row.date {
+  color: #999;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-bottom: 1px solid #0b2b5a; }
+.ldl_table_expanded_row .ldl_billing_section h3 {
+  margin: 0 0 5px 0;
+  border-bottom: 1px solid #0b2b5a; }
+.ldl_table_expanded_row .ldl_billing_section .ldl_charges {
+  padding: 5px 1%;
+  width: 28%;
+  border: 1px solid #508c5d;
+  margin: 0 1%;
+  float: left; }
+.ldl_table_expanded_row .ldl_billing_section .ldl_billing_info {
+  padding: 5px 1%;
+  border: 1px solid #CCC;
+  width: 38%;
+  margin: 0 1%;
+  float: left; }
+
+body {
+  font-family: sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+/**
+ * Clearfix from http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+body {
+  background-color: #9ba197;
+  margin: 0;
+  padding: 0; }
+
+.ldl_loading {
+  font-size: 1.5em;
+  font-weight: bold;
+  max-width: 100px;
+  padding: 40px;
+  margin: 20px auto;
+  text-align: center; }
+
+.ldl_site_header {
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: #efefed;
+  padding: 20px; }
+
+.ldl_page_header {
+  background-color: #FFF;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px; }
+  .ldl_page_header h1 {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    float: left; }
+  .ldl_page_header .search {
+    padding: 5px 0;
+    width: 60%;
+    float: left;
+    text-align: right; }
+
+.ldl_main_container {
+  background-color: #FFF;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px; }
