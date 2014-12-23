@@ -3,7 +3,7 @@ define([
   "backbone",  
 ],function(_,Backbone){
   return Backbone.Model.extend({
-    "url":"/data/contacts.json",
+    "url":"data/contacts.json",
     "parse":function(data){
       if(_.isArray(data)){
         data = _.findWhere(data,{"id":this.get("id")});        

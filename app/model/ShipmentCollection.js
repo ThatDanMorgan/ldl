@@ -5,7 +5,7 @@ define([
 ],function(_,Backbone,ShipmentModel){    
   return Backbone.Collection.extend({
     "model":ShipmentModel,
-    "url":"/data/shipment_display.json",
+    "url":"data/shipment_display.json",
     "parse":function(data,options){
         if(options.filter){
             var filter = [];
