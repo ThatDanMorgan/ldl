@@ -6,6 +6,10 @@ define([
   return Backbone.Collection.extend({
     "model":ShipmentModel,
     "url":"data/shipment_display.json",
+    /**
+     * This parse() exists to similate the filter operation expected on
+     * the actual live API.  
+     */
     "parse":function(data,options){
         if(options.filter){
             var filter = [];

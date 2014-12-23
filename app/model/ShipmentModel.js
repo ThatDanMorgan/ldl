@@ -1,3 +1,10 @@
+/** 
+ * BACKBONE MODEL: Shipment
+ * Unlike the ShipmentCollection this model reads from the `shipments.json`
+ * file which contains more in depth shipment data.  The upshot is that
+ * when this model is built (via the collection) it has enough information
+ * to be rendered, and then the app can use its `fetch()` to finish the call.
+ */
 define([
   "underscore",
   "backbone",  

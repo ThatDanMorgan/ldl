@@ -1,3 +1,6 @@
+/** 
+ * Converts the data.xlsx file into "fixture" data usable by the application.
+ */
 var XLSX = require('xlsx');
 var fs = require('fs');
 var _ = require('underscore');
@@ -164,12 +167,17 @@ var TRANSLATIONS = {
     }
     
 }
+/**
+ * Dan's favorite unique id generation algorithm in JavaScript
+ */
+function createUniqueId(){
+    return Math.floor(Math.random() * new Date().getTime()).toString(36);
+}
 
-    function createUniqueId(){
-        return Math.floor(Math.random() * new Date().getTime()).toString(36);
-    }
 
-
+/** 
+ * Maps an object to a datatable.  This ensures that no duplicates are created.
+ */
 function mapToDB(dataTable,inObj){
     
     var obj = _.findWhere(dataTable,inObj);
@@ -181,6 +189,10 @@ function mapToDB(dataTable,inObj){
     return obj.id;
 }
 
+/**
+ * Creates an object with just the data points found in the translations
+ * map for the translationKey passed.
+ */
 function createObject(data,translationKey){
     var translation = TRANSLATIONS[translationKey];
     var obj = {};
@@ -190,6 +202,9 @@ function createObject(data,translationKey){
     return obj;
 }
 
+/** 
+ * Creates an object and maps it to its associated "table" of data.
+ */
 function createAndMapObject(dataTable,translationKey,data){
     var obj = createObject(data,translationKey);
     return mapToDB(dataTable,obj);
@@ -204,6 +219,7 @@ function blockData(row,key){
 
 for(var x = 0; x < raw.length; x++){
     var row = raw[x];
+    // Start Remove the following to show real data.
     blockData(row,"BillToName")
     blockData(row,"BillToFaxNo")
     blockData(row,"DestContactPerson")
@@ -230,10 +246,10 @@ for(var x = 0; x < raw.length; x++){
     blockData(row,"Ref1")
     blockData(row,"Ref2")
     blockData(row,"Ref3")
-    
+
     row.FuelCost = x + .99;
     row.FreightCost = x + .11;
-
+    // END
 
     var shipment = createObject(row,"shipment");    
     
